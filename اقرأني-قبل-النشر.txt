@@ -1,0 +1,16 @@
+نسخة سما فلور المعدلة الكاملة
+
+تحتوي على خريطة الموقع sitemap.xml وملف robots.txt والواجهة العربية ولوحة الإدارة وملفات API وقاعدة البيانات.
+
+مهم قبل النشر:
+1- لا ترفع ملف ZIP نفسه باعتباره الموقع؛ فك الضغط أولاً.
+2- الملفات يجب أن تكون في جذر المشروع، مع الاحتفاظ بمجلد functions كما هو.
+3- ملف wrangler.toml يحتوي على قيمة مؤقتة REPLACE_WITH_YOUR_D1_DATABASE_ID؛ استبدلها بمعرّف قاعدة D1 الفعلي عند النشر عبر Wrangler.
+4- اربط D1 باسم DB في إعدادات Pages، وأضف Secret باسم ADMIN_PASSWORD وSecret باسم SESSION_SECRET.
+5- نشر Pages Functions يحتاج نشرًا يدعم مجلد functions (مثل Git integration أو Wrangler)، وليس مجرد رفع ملفات الموقع الثابتة من لوحة الرفع المباشر.
+
+بعد النشر اختبر:
+https://samaflour.pages.dev/
+https://samaflour.pages.dev/sitemap.xml
+https://samaflour.pages.dev/robots.txt
+https://samaflour.pages.dev/admin.html
